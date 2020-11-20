@@ -1,0 +1,18 @@
+@media (max-width: 900px)  {
+  .header_container {
+    height: 120px;
+    display: flex;justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .space{
+    flex:none;
+  }
+  ul {
+    width: 100%;
+  }
+  li a{
+    font-size: 30px;
+
+  }
+}
