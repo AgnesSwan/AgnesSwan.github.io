@@ -21,7 +21,7 @@ body{
   padding-right: 20px;
   width:100%;
   box-shadow:0px 20px 50px rgb(153, 152, 152) ;
-  z-index: 2;
+  z-index: 10;
   }
  
 .nav {
@@ -133,16 +133,231 @@ margin-right: 0;
 }
 
 
+/*
+ABOUT
+*/
+
+.skills_container{
+  position: relative;
+
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .tab {
+  display: flex;
+  flex-direction: row;
+}
+.box_shape_p {
+  margin-top:50px;
+    position: absolute; 
+    height: 332px; 
+    width: 347px; 
+    background-image:  linear-gradient(to left top, #c6997cce, #ddaca0, #ecc1c3, #f6d8e3, #dcc7d7);; 
+    border-radius: 6px; 
+    left: 10px; 
+    transform: rotate(113deg) skew(46deg); 
+    -webkit-transform: rotate(113deg) skew(46deg); 
+    z-index: 1;
+    opacity: 75%;
+}
+
+ .box_ab {
+  
+  z-index:3;width: 50%;
+ }
+ .tab .box_ab  .tab-list {
+padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: 420px; 
+     width: 380px;
+  overflow: hidden; 
+  background-color: #c4c4c4d0; 
+     border-radius: 10px; 
+
+}
+
+
+  .tab  .tab-list button {
+    text-align: left;
+    display: block;
+    width: 350px;
+    color: black;
+    background-color: #C4C4C4;
+    border: none;
+    padding: 10px;
+    margin: 0 0 2px 0;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 36px;
+   cursor: pointer;
+  }
+
+  .tab .tab-list button.active, .tab .tab-list button:hover {
+    color: #A76C43; }
+ .tab .tab-wrap {
+        width: 800px;
+        height: 500px;
+        background: none;
+
+        color: #333;
+        padding: 20px 0 0; 
+      }
+  .tab .tab-content {
+        display: none;
+        
+      }
+#t1 {
+   padding: 50px 0 0 20px;
+     
+      }
+#t2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+      }
+      #t3{
+        padding: 100px 0 0 40px;
+      }
+      #t4{
+        padding: 20px 0 0 40px;
+      }
+  .tab .tab-content.active {
+          display: block; 
+        }
+  .tab .tab-content  p {
+    margin-left: 60px;
+
+    color:black;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Roboto';}
+.tab .tab-wrap .tab-content  h1{
+margin-top: 15px;
+    color: #A76C43;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Roboto';
+  }
+  .tab .tab-wrap .tab-content  h2{
+    margin-left: 30px;
+    color:black;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Roboto';
+  }
+  .tab .tab-wrap .tab-content .circle{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background: #c4c4c4;
+    border-radius: 50%
+    }
+    .progress_item {
+      display: flex;
+      flex-direction: column;
+width:100px;
+margin:10px;}
+.progress_item .progress {
+width: 100%;
+
+}
+.progress_item .progress_text {
+  width: 100%;
+display: flex;
+justify-content: left;
+font-family: 'Roboto';}
+    .dot{
+      height: 15px;
+      width: 15px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      ;
+    }
+    #d1 {
+      animation: animate 4s ease forwards
+    }
+    @keyframes animate {
+      from {
+        background-color: #bbb;
+      }
+    
+      to {
+        background-color: #A76C43;
+      }
+      
+    }
+#row_skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .soft_skills {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+table {
+  width: 500px;
+}
+table thead {
+  background:  #a76d4395;
+  border-bottom: 2px solid black;
+}
+
+table td{
+  width: 33.33%;
+
+}
+#row_skill {
+  margin: 0 0 20px 10px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  font-size: 18px;
+  font-style: italic;
+  font-family: 'Roboto';
+
+}
+table td #row_skill {
+  font-size:12px;
+}
+
+
+  #work {
+    margin: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Roboto';
+  
+  }
 
 
 
 
 
-
-
-
-
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .header_container {
     height: 120px;
     display: flex;justify-content: space-between;
@@ -161,7 +376,7 @@ margin-right: 0;
 
   }
 
-}
+} */
 
 
 @media (max-width: 600px) {
@@ -205,4 +420,151 @@ margin-right: 0;
     font-size: 30px;
     margin-bottom: 20px;
   }
+.tab {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+    
+  .skills_container .tab  .tab-list {
+    padding: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    justify-content: center;
+      margin:40px 0px 0px 0px;
+      width: 300px;
+      height: 100px; 
+      overflow: hidden; 
+         border-radius: 10px; 
+    
+    }
+    
+    
+    .tab .tab-wrap {
+      margin: 0;
+      display: flex;
+      z-index: 6;
+      width: 300px;
+    }
+      .tab  .tab-list button {
+        text-align: left;
+        display: block;
+        width: auto;
+        color: black;
+        background-color: transparent;
+        border: none;
+        padding: 5px;
+        margin: 0 0 5px 0;
+        font-style: italic;
+        font-size: 16px;
+       cursor: pointer;
+       outline: none;
+      }
+       .box_shape_p {
+        margin-left:-40px;
+          position: absolute; 
+          height: 100px; 
+          width: 300px; 
+          background-image:  linear-gradient(to left top, #c6997cce, #ddaca0, #ecc1c3, #f6d8e3, #dcc7d7); 
+          border-radius: 6px; 
+          transform: rotate(13deg) skew(46deg); 
+          -webkit-transform: rotate(13deg) skew(46deg); 
+          z-index: 1;
+          opacity: 75%;
+      } 
+      .tab .tab-content  p {
+        margin-left: 60px;
+    
+        color:black;
+        font-size: 10px;
+        font-style: italic;
+        font-family: 'Roboto';}
+    .tab .tab-wrap .tab-content  h1{
+    margin-top: 40px;
+        color: #A76C43;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+        font-family: 'Roboto';
+        vertical-align: center;
+
+      
+      }
+      .tab .tab-wrap .tab-content .circle {
+        margin-top: 40px;
+       
+
+      }
+      .tab .tab-wrap .tab-content  h2{
+        margin-left: 40px;
+        color:black;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bold;
+        font-family: 'Roboto';
+      }
+      .tab .tab-wrap .tab-content li {
+        font-size: 12px;
+        padding: 5px;
+    
+      }
+      
+      #t1 {
+        padding: 0px ;
+      
+       }
+       #t3{
+         padding: 0px ;
+       }
+       #t4{
+         padding: 0px ;
+       }
+
+  .skills_container {
+    height: fit-content;
+    padding-bottom: 40px;
+
+  }   
+      
+#t2 {
+  margin-top:40px;
+  padding:0px;
+  
+}.progress_text {
+  font-size: 12px;
 }
+.soft_skills {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-width: 100px;
+}
+table {
+  width: 300px;
+}
+table td{
+  width: 33.33%;
+
+}
+#row_skill {
+  list-style: none;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  font-family: 'Roboto';
+padding: 0px;
+}
+#row_skill li{
+  font-size: 10px;
+
+}
+table td #row_skill {
+  font-size:10px;
+}
+#t3 span {
+  margin:0px;
+}
+    }
