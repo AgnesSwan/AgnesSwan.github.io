@@ -566,7 +566,7 @@ footer{
   position: relative;
   width: 100%;
   height: 120px;
-  background-color: #a76d43b1;
+  background-color:#c6997cce;
   margin: 0;
 
 }
@@ -840,6 +840,11 @@ justify-content: center;
 .contact_container {
 height: 300px;
 padding-top: 0px;
+background-color: #a0816a ;
+z-index:1;
+margin-top:5px;}
+.contact_container .infos {
+  width: 100%;
 
 }
 .form {
@@ -848,9 +853,7 @@ padding-top: 0px;
 .arrow , .arrow img {
   display:none;
 }
-.infos h1, h2, i {
-  z-index: 2;
-}
+
 .contact_container h1 {
   padding-bottom: 20px;
   color: #A76C43;
@@ -866,11 +869,6 @@ padding-top: 0px;
   font-size: 12px;
 }
 
-.contact_container .infos {
-  display: flex;
-  flex-direction: column;
-  margin-left: 40px;
-  padding: 5px;
-  width: 50%;
-}
+  
+
     }
