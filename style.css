@@ -649,6 +649,9 @@ footer{
 }
 
 @media (max-width: 375px) {
+  .header_container {
+    margin: 0px 0px 5px 0px;
+  }
   .home_container {
     clip-path: polygon(0 0, 100% 0, 100% 89%, 65% 100%, 35% 100%, 0 89%);
 height: 800px;
@@ -667,10 +670,12 @@ height: 800px;
     font-size: 30px;
     margin-bottom: 20px;
   }
+ 
 .tab {
       display: flex;
       flex-direction: column;
       width: 300px;
+      margin-top: 70px;
     }
     
   .skills_container .tab  .tab-list {
@@ -818,6 +823,8 @@ table td #row_skill {
 /*Portfolio*/
 .portfolio_container {
   height: 850px;
+  margin: 0px;
+  padding: 0px;
 }
 .portfolio_container .tab .tab-list {
 display: flex;
@@ -846,8 +853,7 @@ justify-content: center;
 height: 300px;
 width:300px;
 padding-top: 0px;
-margin-top:5px;
-
+margin-top:100px;
 }
 
 .contact_container .infos {
