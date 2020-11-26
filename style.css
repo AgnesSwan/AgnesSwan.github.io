@@ -7,9 +7,11 @@
 
 body{
   margin: 0px;
+  height: 0px;
+}
+element.style {
   height: 0;
 }
-
 .header_container 
 {
   position: fixed;
@@ -651,6 +653,7 @@ footer{
 @media (max-width: 375px) {
   .header_container {
     margin: 0px 0px 5px 0px;
+    position: fixed;
   }
   .home_container {
     clip-path: polygon(0 0, 100% 0, 100% 89%, 65% 100%, 35% 100%, 0 89%);
